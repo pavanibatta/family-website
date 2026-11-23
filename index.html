@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Family Memories</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <a href="#home">🏠 Home</a>
+        <a href="#members-section">👨‍👩‍👧 Members</a>
+        <a href="#gallery-section">📸 Gallery</a>
+        <a href="#tree-section">🌳 Family Tree</a>
+        <a href="#about-section">ℹ️ About</a>
+
+    </nav>
+
+
+    <!-- Home -->
+    <header id="home">
+
+        <h1>❤️ Our Family Memories ❤️</h1>
+
+        <p>All our beautiful family memories in one place</p>
+
+    </header>
+
+
+    <!-- Add Family Member -->
+    <section class="add-member">
+
+        <h2>➕ Add Family Member</h2>
+
+        <input
+            type="text"
+            id="memberName"
+            placeholder="Enter member name"
+        >
+
+        <input
+            type="text"
+            id="memberRelation"
+            placeholder="Enter relation"
+        >
+
+        <input
+            type="file"
+            id="memberPhoto"
+            accept="image/*"
+        >
+
+        <br><br>
+
+        <button onclick="addMember()">
+            Add Member
+        </button>
+
+    </section>
+
+
+    <!-- Family Members -->
+    <section id="members-section">
+
+        <h2>👨‍👩‍👧‍👦 Family Members</h2>
+
+        <!-- IMPORTANT: JavaScript will add members here -->
+        <div id="members">
+
+        </div>
+
+    </section>
+
+
+    <!-- Family Gallery -->
+    <section id="gallery-section">
+
+        <h2>📸 Family Gallery</h2>
+
+        <div class="photo-upload">
+
+            <input
+                type="file"
+                id="familyPhotos"
+                accept="image/*"
+                multiple
+            >
+
+            <br><br>
+
+            <button onclick="addPhotos()">
+                Add Photos 📸
+            </button>
+
+        </div>
+
+        <div id="gallery" class="gallery-grid">
+
+        </div>
+
+    </section>
+
+
+    <!-- Family Tree -->
+    <section id="tree-section" class="family-tree">
+
+        <h2>🌳 Our Family Tree</h2>
+
+        <div class="tree">
+
+            <div class="tree-level">
+
+                <div class="tree-card">
+                    👴 Grandfather
+                </div>
+
+                <div class="tree-card">
+                    👵 Grandmother
+                </div>
+
+            </div>
+
+            <div class="tree-line">
+                ↓
+            </div>
+
+            <div class="tree-level">
+
+                <div class="tree-card">
+                    👨 Father
+                </div>
+
+                <div class="tree-card">
+                    👩 Mother
+                </div>
+
+            </div>
+
+            <div class="tree-line">
+                ↓
+            </div>
+
+            <div class="tree-level">
+
+                <div class="tree-card">
+                    👧 Daughter
+                </div>
+
+                <div class="tree-card">
+                    👦 Son
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about-section" class="about">
+
+        <h2>ℹ️ About Our Family</h2>
+
+        <p>
+            Welcome to our family memories website.
+            This website helps us keep our family members,
+            photos and beautiful memories together in one place. ❤️
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>Made with ❤️ for our family</p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
